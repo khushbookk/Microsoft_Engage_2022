@@ -22,4 +22,5 @@ Price Table : This table contains the entry-level (i.e.,the cheapest trim price)
 
 
 Dataset Reference
+
 Jingming Huang, Bowei Chen, Lan Luo, Shigang Yue, Iadh Ounis (2021). "DVM-CAR: A large-scale automotive dataset for visual marketing research and applications". In: ArXiv e-prints (Aug.2021). arXiv: 2109.00881
