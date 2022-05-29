@@ -42,7 +42,7 @@ numpy\
 matplotlib\
 PIL
 
-## csv files to MySQL Server
+## CSV files to MySQL Server
 <p float="left">
 <img src="https://user-images.githubusercontent.com/55143211/170878023-6e00f1b1-1d22-4192-a715-f27fc6a5802d.png" width="300" height="300">
 <img src="https://user-images.githubusercontent.com/55143211/170878079-ee0d085c-8b99-4f5c-9696-cd2095b69415.png" width="700" height="300">
