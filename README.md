@@ -70,8 +70,9 @@ PIL
 ## Run Application
 <img src="https://user-images.githubusercontent.com/55143211/170880412-14499bb3-262f-4da2-8ed9-bfa5dedd0d49.png" width="600" height="200">
 
+### [Video](https://youtu.be/_hEf3XUF-9E)
 
-
+### [Dataset](https://deepvisualmarketing.github.io/)
 
 
 
