@@ -1,8 +1,14 @@
 
+import streamlit as st
+st.set_page_config(
+	layout="wide",  
+	initial_sidebar_state="auto",  # Can be "auto", "expanded", "collapsed"
+	page_title='Automotive Data Analysis', 
+	page_icon=None,  
+)
 
 from sqlalchemy import create_engine, inspect
 import pandas as pd
-import streamlit as st
 import time
 import numpy as np
 from matplotlib import pyplot as plt
@@ -28,12 +34,12 @@ def get_connection():
 
 
 def define_dashboard_config():
-	st.set_page_config(
-		layout="wide",  
-		initial_sidebar_state="auto",  # Can be "auto", "expanded", "collapsed"
-		page_title='Automotive Data Analysis', 
-		page_icon=None,  
-	)
+	# st.set_page_config(
+	# 	layout="wide",  
+	# 	initial_sidebar_state="auto",  # Can be "auto", "expanded", "collapsed"
+	# 	page_title='Automotive Data Analysis', 
+	# 	page_icon=None,  
+	# )
 
 	col_1, col_2 = st.columns([3,1])
 	# with col_1:
