@@ -4,3 +4,4 @@ sqlalchemy
 pandas
 numpy
 streamlit
+pymysql
