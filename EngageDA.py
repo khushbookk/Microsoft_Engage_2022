@@ -14,11 +14,11 @@ from PIL import Image
 # user=st.secrets.local.mysql["username"]
 # password=st.secrets.local.mysql["password"]
 
-host=st.secrets.mysql["host"]
-port = st.secrets.mysql["port"]
-database=st.secrets.mysql["database"]
-user=st.secrets.mysql["username"]
-password=st.secrets.mysql["password"]
+# host=st.secrets.mysql["host"]
+# port = st.secrets.mysql["port"]
+# database=st.secrets.mysql["database"]
+# user=st.secrets.mysql["username"]
+# password=st.secrets.mysql["password"]
 
 # PYTHON FUNCTION TO CONNECT TO THE MYSQL DATABASE AND
 # RETURN THE SQLACHEMY ENGINE OBJECT
