@@ -8,25 +8,22 @@ import numpy as np
 from matplotlib import pyplot as plt
 from PIL import Image
 
-st.set_page_config()
 # host=st.secrets.local.mysql["host"]
 # port = st.secrets.local.mysql["port"]
 # database=st.secrets.local.mysql["database"]
 # user=st.secrets.local.mysql["username"]
 # password=st.secrets.local.mysql["password"]
 
-# host=st.secrets.mysql["host"]
-# port = st.secrets.mysql["port"]
-# database=st.secrets.mysql["database"]
-# user=st.secrets.mysql["username"]
-# password=st.secrets.mysql["password"]
+host=st.secrets.connections.mysql["host"]
+port = st.secrets.connections.mysql["port"]
+database=st.secrets.connections.mysql["database"]
+user=st.secrets.connections.mysql["username"]
+password=st.secrets.connections.mysql["password"]
 
 # PYTHON FUNCTION TO CONNECT TO THE MYSQL DATABASE AND
 # RETURN THE SQLACHEMY ENGINE OBJECT
 def get_connection():
-	return st.experimental_connection('mysql', type='sql')
-
-	# return create_engine('mysql+pymysql://{}:{}@{}:{}/{}'.format(user,password,host,port,database))
+	return create_engine('mysql+pymysql://{}:{}@{}:{}/{}'.format(user,password,host,port,database))
 
 
 def define_dashboard_config():

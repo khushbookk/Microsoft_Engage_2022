@@ -1,5 +1,5 @@
 matplotlib
 pillow
-mysqlclient
+sqlalchemy
 pandas
 numpy
