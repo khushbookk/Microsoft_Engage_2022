@@ -3,3 +3,4 @@ pillow
 sqlalchemy
 pandas
 numpy
+streamlit
