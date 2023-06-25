@@ -1,18 +1,12 @@
 
 import streamlit as st
 
-# st.set_page_config(
-# 	layout="wide",  
-# 	initial_sidebar_state="auto",  # Can be "auto", "expanded", "collapsed"
-# 	page_title='Automotive Data Analysis', 
-# 	page_icon=None,  
-# )
 
 st.set_page_config(
     page_title="Automotive Data Analysis",
     page_icon=None, 
     layout="wide",
-    initial_sidebar_state="expanded"
+    initial_sidebar_state="auto"
 )
 
 from sqlalchemy import create_engine, inspect
@@ -41,13 +35,7 @@ def get_connection():
 
 
 def define_dashboard_config():
-	# st.set_page_config(
-	# 	layout="wide",  
-	# 	initial_sidebar_state="auto",  # Can be "auto", "expanded", "collapsed"
-	# 	page_title='Automotive Data Analysis', 
-	# 	page_icon=None,  
-	# )
-
+	
 	col_1, col_2 = st.columns([3,1])
 	# with col_1:
 	# 	st.title('Automotive Data Analysis')
