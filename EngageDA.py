@@ -46,10 +46,10 @@ def load_image():
 
 	col_1, col_2 = st.columns([2,2])
 	with col_1:
-		image = Image.open(r"Microsoft_Engage_2022/Image/lux.png")
+		image = Image.open(r"Image/lux.png")
 		st.image(image, use_column_width = 'auto' )
 	with col_2:
-		image = Image.open(r"Microsoft_Engage_2022/Image/Automo.png")
+		image = Image.open(r"Image/Automo.png")
 		st.image(image, use_column_width = 'auto' )
 
 
