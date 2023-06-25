@@ -8,6 +8,7 @@ import numpy as np
 from matplotlib import pyplot as plt
 from PIL import Image
 
+st.set_page_config()
 # host=st.secrets.local.mysql["host"]
 # port = st.secrets.local.mysql["port"]
 # database=st.secrets.local.mysql["database"]
