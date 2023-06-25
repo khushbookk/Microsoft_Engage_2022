@@ -1,10 +1,18 @@
 
 import streamlit as st
+
+# st.set_page_config(
+# 	layout="wide",  
+# 	initial_sidebar_state="auto",  # Can be "auto", "expanded", "collapsed"
+# 	page_title='Automotive Data Analysis', 
+# 	page_icon=None,  
+# )
+
 st.set_page_config(
-	layout="wide",  
-	initial_sidebar_state="auto",  # Can be "auto", "expanded", "collapsed"
-	page_title='Automotive Data Analysis', 
-	page_icon=None,  
+    page_title="Automotive Data Analysis",
+    page_icon=None, 
+    layout="wide",
+    initial_sidebar_state="expanded"
 )
 
 from sqlalchemy import create_engine, inspect
