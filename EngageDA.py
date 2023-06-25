@@ -35,7 +35,6 @@ def get_connection():
 
 
 def define_dashboard_config():
-	
 	col_1, col_2 = st.columns([3,1])
 	# with col_1:
 	# 	st.title('Automotive Data Analysis')
