@@ -8,15 +8,17 @@ import numpy as np
 from matplotlib import pyplot as plt
 from PIL import Image
 
+# host=st.secrets.local.mysql["host"]
+# port = st.secrets.local.mysql["port"]
+# database=st.secrets.local.mysql["database"]
+# user=st.secrets.local.mysql["username"]
+# password=st.secrets.local.mysql["password"]
 
-#mysql details
-comment='''Display the data'''
-host="localhost"
-port = 3306
-database="automotive"
-user="root"
-password="MySQL2022"
-
+host=st.secrets.mysql["host"]
+port = st.secrets.mysql["port"]
+database=st.secrets.mysql["database"]
+user=st.secrets.mysql["username"]
+password=st.secrets.mysql["password"]
 
 # PYTHON FUNCTION TO CONNECT TO THE MYSQL DATABASE AND
 # RETURN THE SQLACHEMY ENGINE OBJECT
@@ -44,10 +46,10 @@ def load_image():
 
 	col_1, col_2 = st.columns([2,2])
 	with col_1:
-		image = Image.open(r"C:\lux.png")
+		image = Image.open(r"Microsoft_Engage_2022/Image/lux.png")
 		st.image(image, use_column_width = 'auto' )
 	with col_2:
-		image = Image.open(r"C:\Automo.png")
+		image = Image.open(r"Microsoft_Engage_2022/Image/Automo.png")
 		st.image(image, use_column_width = 'auto' )
 
 
@@ -323,10 +325,10 @@ def main():
 	except Exception as ex:
 		print("Connection could not be made due to the following error: \n", ex)
 	
+	# plt.style.use('dark_background')
 
 	define_dashboard_config()
 
-	plt.style.use('dark_background')
 
 	menu = ["Automotives Data Analysis", "About", "Automaker-Models", "Automaker-Models-Sales", "Automaker-sales",
 	 "Popular-Model-Automaker", "Price-Sales"]
