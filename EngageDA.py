@@ -23,7 +23,7 @@ from PIL import Image
 # PYTHON FUNCTION TO CONNECT TO THE MYSQL DATABASE AND
 # RETURN THE SQLACHEMY ENGINE OBJECT
 def get_connection():
-	return st.experimental_connection('mysql', type=st.connections.mysql.type)
+	return st.experimental_connection('mysql', type='sql')
 
 	# return create_engine('mysql+pymysql://{}:{}@{}:{}/{}'.format(user,password,host,port,database))
 
