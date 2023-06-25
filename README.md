@@ -22,26 +22,6 @@ I have made use of 'Basic table', 'Sales table', 'Price table' from the dataset 
 
 **Jingming Huang, Bowei Chen, Lan Luo, Shigang Yue, Iadh Ounis (2021). "DVM-CAR: A large-scale automotive dataset for visual marketing research and applications". In: ArXiv e-prints (Aug.2021). arXiv: 2109.00881**
 
-## Softwares Required
-
-Python IDE\
-MySQL Workbench
-
-## Installations Required
-
-pip install pymysql \
-pip install wheel \
-pip install mysql
-
-## Python Modules Used
-sqlalchemy\
-pandas\
-streamlit\
-time\
-numpy\
-matplotlib\
-PIL
-
 ## Run Application
 <img src="https://user-images.githubusercontent.com/55143211/170880412-14499bb3-262f-4da2-8ed9-bfa5dedd0d49.png" width="600" height="200">
 
