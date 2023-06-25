@@ -23,7 +23,9 @@ password=st.secrets.mysql["password"]
 # PYTHON FUNCTION TO CONNECT TO THE MYSQL DATABASE AND
 # RETURN THE SQLACHEMY ENGINE OBJECT
 def get_connection():
-	return create_engine('mysql+pymysql://{}:{}@{}:{}/{}'.format(user,password,host,port,database))
+	return st.experimental_connection('mysql', type=st.connections.mysql.type)
+
+	# return create_engine('mysql+pymysql://{}:{}@{}:{}/{}'.format(user,password,host,port,database))
 
 
 def define_dashboard_config():
